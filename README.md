@@ -10,7 +10,7 @@ Column|Type|Options|
 ### Association
 - has_many :groups
 - has_many :messages
-
+  has_many :groups_users
 
 ## groups_usersテーブル
 
@@ -28,11 +28,11 @@ Column|Type|Options|
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|member|string|null: true|
 
 ### Association
 - has_many :users
-- has_many :massages
+- has_many :messages
+  has_many :groups_users
 
 ## messageテーブル
 
@@ -40,9 +40,9 @@ Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|body|text|null: false|
+|body|text|null: true|
 |image|string|null: true|
 
 ### Association
-- has_many :users
-- has_many :massages
+- belong to :user
+- belong to :group
