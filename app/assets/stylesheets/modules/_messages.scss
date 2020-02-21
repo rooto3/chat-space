@@ -42,14 +42,17 @@ $lightblue:#38aef0;
       padding-left: 20px;
       padding-bottom: 40px;
       padding-right: 20px;
-      color: $whitecolor;
-      font-style: bold;
+      text-decoration: none;
       &__name{
         font-size: 15px;
         margin-bottom: 5px;
+        color: $whitecolor;
+        font-style: bold;
       }
       &__content{
         font-size: 11px;
+        color: $whitecolor;
+        font-style: bold;
       }
     }
   }

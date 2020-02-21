@@ -4,21 +4,19 @@
       .top-items__name
         = current_user.name
       .top-items__icons
-        = link_to "#" do
+        = link_to = link_to new_group_path do
           = icon("far", 'edit' , class: "top-items__icons")
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'top-items__icons')
   .side-bar__group-list
-    .group-items
-      .group-items__name
-        ドラクエ
-      .group-items__content
-        裏ボスが倒せません
-    .group-items
-      .group-items__name
-        動物の森楽しみ
-      .group-items__content
-        早くたぬきに会いたい
+    - current_user.groups.each do |group|
+      .group-items
+        = link_to '#' do
+          .group-items__name
+            = group.name
+          .group-items__content
+            メッセージはまだありません
+    
 
 
 
