@@ -104,11 +104,11 @@ $lightblue:#38aef0;
       margin-bottom: 11px;
       &__top{
         display: flex;
-        &_name{
+        &__name{
         font-size: 16px;
         color: #333333;
         }
-        &_date{
+        &__date{
           font-size: 12px;
           color: #999999;
           margin-left: 10px;
@@ -129,7 +129,6 @@ $lightblue:#38aef0;
     form{
       display: flex;
       .input-box{
-        width: 100%;
         display: flex;
         position: relative;
         &__text{
