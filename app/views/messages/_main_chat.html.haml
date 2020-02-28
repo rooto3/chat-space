@@ -11,8 +11,6 @@
       = link_to 'Edit', edit_group_path(@group), class: "right-info__edit-btn"
   .chat-main__message-list
     = render @messages
-    
-    
   .chat-main__message-form
     .form
       = form_for [@group, @message] do |f|
