@@ -43,7 +43,9 @@ $lightblue:#38aef0;
       padding-left: 20px;
       padding-bottom: 40px;
       padding-right: 20px;
-      text-decoration: none;
+      .link{
+        text-decoration: none;
+      }
       &__name{
         font-size: 15px;
         margin-bottom: 5px;
