@@ -1,4 +1,6 @@
 Rails.application.configure do
+  server '18.178.51.193', user: 'ec2-user', roles: %w{app db web}
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -84,3 +86,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
