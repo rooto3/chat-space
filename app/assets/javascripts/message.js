@@ -9,7 +9,7 @@ $(function(){
               ${message.user_name}
             </div>
             <div class="list-items__top__date">
-              ${message.date}
+              ${message.created_at}
             </div>
           </div>
           <div class="list-items__down">
